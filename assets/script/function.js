@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     smooth: true,
     direction: 'vertical',
     gestureDirection: 'vertical',
-    smoothTouch: false,
+    smoothTouch: true,
   });
 
   function raf(time) {
