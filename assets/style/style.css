@@ -325,7 +325,6 @@ body::-webkit-scrollbar-thumb{
     position:fixed;
     top:4.4vw;
     z-index: 1;
-    touch-action: none;
 }
 .hero-section-image-wrapper{
     scroll-snap-align:start;

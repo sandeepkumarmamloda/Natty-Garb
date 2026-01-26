@@ -1,13 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const lenis = new Lenis({
-    duration: 1.2,
-    wheelMultiplier: 0.4,
-    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-    smooth: true,
-    direction: 'vertical',
-    gestureDirection: 'vertical',
-    smoothTouch: true,
-  });
+ const lenis = new Lenis({
+  duration: 1.2,
+  wheelMultiplier: 0.4,
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  smooth: true,
+  direction: "vertical",
+  gestureDirection: "vertical",
+  smoothTouch: true,   // ✅ FIX
+});
+
 
   function raf(time) {
     lenis.raf(time)
