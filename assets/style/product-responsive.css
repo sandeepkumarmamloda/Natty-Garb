@@ -203,6 +203,15 @@
         font-size:5vw;
     }
     /* ================header-end==================== */
+    /* ================cust-sliding-start================ */
+    .cust-sliding{
+        grid-template-rows:repeat(6,auto);
+        grid-template-columns:repeat(2,1fr);
+    }
+    .cust-sliding .slide-wrapper{
+        height:90vw;
+    }
+    /* ================cust-sliding-end=================== */
     /* ================cust-new-arrivals-start======== */
     .cust-new-arrivals{
         height:220vw;
