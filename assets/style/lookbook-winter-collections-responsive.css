@@ -177,9 +177,6 @@
         mix-blend-mode:difference;
         color:white;
     }
-    .hero-section-image-wrapper:nth-child(4) .content-wrapper .inner-content:nth-child(2){
-        
-    }
     .hero-section-image-wrapper:nth-child(4) .content-wrapper .inner-content:nth-child(2) p{
         text-transform:uppercase;
         font-family: 'Inter-Regular';
@@ -566,9 +563,6 @@
         font-size:2.2vw;
         text-transform:uppercase;
         color:#000;
-    }
-    .input-data{
-        
     }
     .input-data input{
         height:100%;
