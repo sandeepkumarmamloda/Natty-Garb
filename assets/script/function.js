@@ -148,8 +148,18 @@ rightBtn?.addEventListener("click", () => {
   scrollToSlide(index);
 });
 
-  // --------------------------------cust-new-arrivals-view-box-start--------------------------------
-
+// --------------------------------cust-menu-bar-start--------------------------------------------
+const cust_menu_bar_close=window.document.querySelector(".cust-menu-bar .close");
+const cust_header_left_menu=window.document.querySelector(".cust-header-left-menu .menu");
+const cust_menu_bar=window.document.querySelector(".cust-menu-bar");
+cust_header_left_menu.addEventListener("click",function(event){
+  cust_menu_bar.classList.add("active");
+})
+cust_menu_bar_close.addEventListener("click",function(event){
+  cust_menu_bar.classList.remove("active");
+})
+// --------------------------------cust-menu-bar-end----------------------------------------------
+// --------------------------------cust-new-arrivals-view-box-start--------------------------------
 const viewBox = document.querySelector(".cust-new-arrivals-top-right-wrapper");
 
 viewBox.addEventListener("mouseover", () => {
@@ -254,7 +264,9 @@ newArrivalsBottom.addEventListener("scroll", () => {
 
 
 // ---------------- LEFT BUTTON ----------------
-newArrivalsL.addEventListener("click", () => {
+newArrivalsL.addEventListener("click", (e) => {
+  e.stopPropagation();
+  e.preventDefault();
   calculateNew -= newArrivalsImage.offsetWidth;
 
   if (calculateNew <= 0) {
@@ -269,7 +281,9 @@ newArrivalsL.addEventListener("click", () => {
 
 
 // ---------------- RIGHT BUTTON ----------------
-newArrivalsR.addEventListener("click", () => {
+newArrivalsR.addEventListener("click", (e) => {
+  e.stopPropagation();
+  e.preventDefault();
   calculateNew += newArrivalsImage.offsetWidth;
 
   if (calculateNew >= maxScrollNew) {
@@ -615,6 +629,13 @@ bottomsR.addEventListener("click", () => {
 });
 // ===========================================================================================responsive================================================================================
 document.addEventListener("DOMContentLoaded", () => {
+  // ---------------------------------menu-bar-start----------------------------------------
+  const r_cust_header_right_menu=window.document.querySelector(".r-cust-header-right-menu");
+  const cust_menu_bar=window.document.querySelector(".cust-menu-bar");
+  r_cust_header_right_menu.addEventListener("click",function(){
+      cust_menu_bar.classList.add("active");
+  })
+  // ---------------------------------menu-bar-end------------------------------------------
   const items = document.querySelectorAll(".natty-footer-child");
 
   items.forEach(item => {

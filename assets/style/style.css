@@ -328,6 +328,52 @@ body::-webkit-scrollbar-thumb{
     top:4.4vw;
     z-index: 1;
 }
+/* ============menu-bar-functionality============== */
+.cust-menu-bar{
+    height:0;
+    width:20%;
+    background-color:white;
+    border-radius:0.5vw;
+    position:fixed;
+    top:4.6vw;
+    z-index:999;
+    overflow:hidden;
+}
+.cust-menu-bar.active{
+    height:fit-content;
+    transition:height 0.4s linear;
+}
+.cust-menu-bar .close{
+    background-color:transparent;
+    height:3vw;
+    width:3vw;
+    top:0;
+    right:0;
+    position:absolute;
+    padding:3%;
+    cursor:pointer;
+}
+.cust-menu-bar .close svg{
+    height:100%;
+    width:100%
+}
+.cust-menu-bar .cust-menu-bar-content{
+    height:fit-content;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    row-gap:10%;
+    list-style-type:none;
+    padding-inline-start:2vw;
+    padding-block:2vw;
+}
+.cust-menu-bar .cust-menu-bar-content li{
+    line-height:400%;
+    font-size:0.6vw;
+}
+/* ============menu-bar-functionality============== */
 .hero-section-image-wrapper{
     scroll-snap-align:start;
     height:100%;
@@ -601,6 +647,11 @@ body::-webkit-scrollbar-thumb{
     font-family: 'Inter-Regular';
     font-size:0.6vw;
     text-transform: uppercase;
+    transition:color 0.4s linear;
+}
+.cust-new-arrivals .cust-new-arrivals-top .cust-new-arrivals-top-right .cust-new-arrivals-top-right-wrapper.active p{
+    color:white;
+    transition:color 0.4s linear;
 }
 .cust-new-arrivals .cust-new-arrivals-top .cust-new-arrivals-top-right .cust-new-arrivals-top-right-wrapper:before{
     position: absolute;
@@ -968,6 +1019,11 @@ body::-webkit-scrollbar-thumb{
     font-family: 'Inter-Regular';
     text-transform:uppercase;
     font-size:0.6vw;
+    transition:color 0.4s linear;
+}
+.cust-hoodies .cust-hoodies-top .cust-hoodies-top-right .cust-hoodies-top-right-wrapper.active p{
+    color:white;
+    transition:color 0.4s linear;
 }
 .cust-hoodies .cust-hoodies-top .cust-hoodies-top-right .cust-hoodies-top-right-wrapper:before{
     position:absolute;
@@ -1230,6 +1286,11 @@ body::-webkit-scrollbar-thumb{
     font-family: 'Inter-Regular';
     font-size:0.6vw;
     text-transform:uppercase;
+    transition:color 0.4s linear;
+}
+.cust-t-shirts .cust-t-shirts-top .cust-t-shirts-top-right .cust-t-shirts-top-right-wrapper.active p{
+    color:white;
+    transition:color 0.4s linear;
 }
 .cust-t-shirts .cust-t-shirts-top .cust-t-shirts-top-right .cust-t-shirts-top-right-wrapper:before{
     position:absolute;
@@ -1491,6 +1552,11 @@ body::-webkit-scrollbar-thumb{
     font-family: 'Inter-Regular';
     font-size:0.6vw;
     text-transform:uppercase;
+    transition:color 0.4s linear;
+}
+.cust-bottoms .cust-bottoms-top .cust-bottoms-top-right .cust-bottoms-top-right-wrapper.active p{
+    color:white;
+    transition:color 0.4s linear;
 }
 .cust-bottoms .cust-bottoms-top .cust-bottoms-top-right .cust-bottoms-top-right-wrapper:before{
     position:absolute;
@@ -1752,6 +1818,10 @@ body::-webkit-scrollbar-thumb{
     font-family: 'Inter-Regular';
     font-size:0.6vw;
     text-transform:uppercase;
+}
+.cust-shirts .cust-shirts-top .cust-shirts-top-right .cust-shirts-top-right-wrapper.active p{
+    color:white;
+    transition:color 0.4s linear;
 }
 .cust-shirts .cust-shirts-top .cust-shirts-top-right .cust-shirts-top-right-wrapper:before{
     position:absolute;
