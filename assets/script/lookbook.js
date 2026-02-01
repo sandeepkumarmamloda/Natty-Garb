@@ -1,3 +1,19 @@
+const lenis = new Lenis({
+  duration: 1.2,
+  wheelMultiplier: 0.4,
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  smooth: true,
+  direction: "vertical",
+  gestureDirection: "vertical",
+  smoothTouch: true,
+});
+
+
+  function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+  }
+  requestAnimationFrame(raf);
 const secondinnerTop=window.document.querySelectorAll(".look-book-second-layer .inner-top");
 secondinnerTop.forEach((element)=>{
   element.addEventListener("mouseover",()=>{

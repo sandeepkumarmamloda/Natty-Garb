@@ -1,5 +1,21 @@
 
 document.addEventListener("DOMContentLoaded", () => {
+  const lenis = new Lenis({
+  duration: 1.2,
+  wheelMultiplier: 0.4,
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  smooth: true,
+  direction: "vertical",
+  gestureDirection: "vertical",
+  smoothTouch: true,
+});
+
+
+  function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+  }
+  requestAnimationFrame(raf);
 // --------------------------------cust-new-arrivals-view-box-start--------------------------------
 const viewBox = document.querySelector(".cust-new-arrivals-top-right-wrapper");
 

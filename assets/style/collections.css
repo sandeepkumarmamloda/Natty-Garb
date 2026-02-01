@@ -586,6 +586,7 @@ body::-webkit-scrollbar-thumb{
     padding-inline:5%;
     padding-block:5%;
     background-color:transparent;
+    display:block;
 }
 .natty-footer .natty-footer-inner .natty-footer-inner-left .natty-footer-inner-left-logo-top .natty-footer-logo .logo.rotating{
     animation-name:rotating;
@@ -1021,7 +1022,7 @@ body::-webkit-scrollbar-thumb{
 .natty-footer-video{
     height:30vw;
     width:100%;
-    background-color:blue;
+    background-color:transparent;
     position:sticky;
     bottom:0;
     z-index:1;

@@ -650,13 +650,14 @@ body::-webkit-scrollbar-thumb{
     padding-inline:5%;
     padding-block:5%;
     background-color:transparent;
+    display:block;
 }
 .natty-footer .natty-footer-inner .natty-footer-inner-left .natty-footer-inner-left-logo-top .natty-footer-logo .logo.rotating{
     animation-name:rotating;
     animation-duration:0.8s;
     animation-delay:0s;
     animation-timing-function:ease-in-out;
-    animation-iteration-count: 1s;
+    animation-iteration-count: 1;
 }
 @keyframes rotating{
     0%{
