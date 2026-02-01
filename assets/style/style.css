@@ -314,7 +314,7 @@ body::-webkit-scrollbar-thumb{
 .hero-section{
     height:calc(100vh - 4.4vw);
     width:100%;
-    background:orange;
+    background:transparent;
     overflow-x:hidden;
     scroll-snap-type:x-mandatory;
     scroll-behavior: smooth;
@@ -703,7 +703,7 @@ body::-webkit-scrollbar-thumb{
 .cust-new-arrivals .cust-new-arrivals-bottom .cust-new-arrivals-bottom-images .images img{
     height:90%;
     width:100%;
-    background:orange;
+    background:transparent;
     object-fit:cover;
 }
 .cust-new-arrivals .cust-new-arrivals-bottom .cust-new-arrivals-bottom-images .images .info{
