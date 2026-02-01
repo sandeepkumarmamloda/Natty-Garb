@@ -659,7 +659,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const cust_menu_bar=window.document.querySelector(".cust-menu-bar");
   r_cust_header_right_menu.addEventListener("click",function(){
       cust_menu_bar.classList.add("active");
-  })
+  });
   // ---------------------------------menu-bar-end------------------------------------------
   const items = document.querySelectorAll(".natty-footer-child");
 
