@@ -16,6 +16,17 @@ firstinnerTop.forEach((element)=>{
     element.classList.remove("active");
   });
 });
+// --------------------------------cust-menu-bar-start--------------------------------------------
+const cust_menu_bar_close=window.document.querySelector(".cust-menu-bar .close");
+const cust_header_left_menu=window.document.querySelector(".cust-header-left-menu .menu");
+const cust_menu_bar=window.document.querySelector(".cust-menu-bar");
+cust_header_left_menu.addEventListener("click",function(event){
+  cust_menu_bar.classList.add("active");
+})
+cust_menu_bar_close.addEventListener("click",function(event){
+  cust_menu_bar.classList.remove("active");
+})
+// --------------------------------cust-menu-bar-end----------------------------------------------
 // ========================================================animate footer-content============================================
 // =========================================================rotating-logo===================================================
 const nattyLogo=document.querySelector(".natty-footer-logo .logo");

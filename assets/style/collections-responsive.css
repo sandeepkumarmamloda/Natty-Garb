@@ -107,6 +107,52 @@
         font-family: 'Inter-Regular';
     }
     /* ================header-end==================== */
+    /* ================cust-menu-bar-start=========== */
+    .cust-menu-bar{
+        height:0;
+        width:50%;
+        background-color:white;
+        border-radius:0.5vw;
+        position:fixed;
+        top:15vw;
+        z-index:999;
+        overflow:hidden;
+    }
+    .cust-menu-bar.active{
+        height:fit-content;
+        transition:height 0.4s linear;
+    }
+    .cust-menu-bar .close{
+        background-color:transparent;
+        height:7vw;
+        width:7vw;
+        top:0;
+        right:0;
+        position:absolute;
+        padding:3%;
+        cursor:pointer;
+    }
+    .cust-menu-bar .close svg{
+        height:100%;
+        width:100%
+    }
+    .cust-menu-bar .cust-menu-bar-content{
+        height:fit-content;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-start;
+        align-items: flex-start;
+        row-gap:10%;
+        list-style-type:none;
+        padding-inline-start:4vw;
+        padding-block:5vw;
+    }
+    .cust-menu-bar .cust-menu-bar-content li{
+        line-height:300%;
+        font-size:2.2vw;
+    }
+    /* ================cust-menu-bar-end============= */
     /* =====================r-shop-all-start=================== */
     .r-shop-all{
         height:160vw;
@@ -250,6 +296,9 @@
         padding-inline-start:5%;
         position:relative;
     }
+    .ten-percent-community.active .header::before{
+        content:"-";
+    }
     .ten-percent-community .header::before{
         content:"+";
         font-size:5vw;
@@ -267,6 +316,8 @@
         font-size:2.5vw;
         line-height:100%;
         text-transform:uppercase;
+        font-family: 'Inter-Regular';
+
     }
     .ten-percent-community .header p:last-child{
         color:black;
@@ -274,6 +325,48 @@
         opacity:0.6;
         line-height:100%;
         text-transform:uppercase;
+        font-family: 'Inter-Regular';
+    }
+    .ten-percent-community .body{
+        height:fit-content;
+        width:100%;
+        padding-inline:4%;
+    }
+    .ten-percent-community .input-data{
+        height:13vw;
+        width:100%;
+        border:solid 0.1vw rgba(0,0,0,1);
+        padding:0.7%;
+        display:flex;
+        flex-direction:row;
+        justify-content:flex-start;
+    }
+    .ten-percent-community .input-data input{
+        height:100%;
+        width:56%;
+        outline:none;
+        border:none;
+        position:relative;
+    }
+    .ten-percent-community .input-data input::placeholder{
+        text-transform:uppercase;
+        font-size:2.2vw;
+        position:absolute;
+        left:5%;
+        top:50%;
+        transform:translateY(-50%);
+    }
+    .ten-percent-community .input-data .button{
+        height:100%;
+        width:44%;
+        background-color:black;
+        color:white;
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+        text-transform:uppercase;
+        font-size:2.8vw;
     }
     .collections{
         height:fit-content;
@@ -323,7 +416,6 @@
         text-transform:uppercase;
         font-size:2.3vw;
         line-height:100%;
-        font-family: 'Inter-Regular';
     }
     .collections .header::before{
         content:"+";
@@ -344,7 +436,6 @@
         font-size:2.5vw;
         text-transform:uppercase;
         font-weight:700;
-        font-family: 'Inter-Regular';
     }
     .customer-services{
         height:fit-content;
@@ -380,7 +471,6 @@
         font-size:2.5vw;
         text-transform:uppercase;
         font-weight:700;
-        font-family: 'Inter-Regular';
     }
     .customer-services .body{
         list-style-type:none;
@@ -406,7 +496,6 @@
         text-transform:uppercase;
         font-size:2.3vw;
         line-height:100%;
-        font-family: 'Inter-Regular';
     }
     .brand{
         height:fit-content;
@@ -442,7 +531,6 @@
         text-transform:uppercase;
         font-size:2.5vw;
         font-weight:700;
-        font-family: 'Inter-Regular';
     }
     .brand .body{
         list-style-type:none;
@@ -472,7 +560,6 @@
         text-transform:uppercase;
         font-size:2.3vw;
         line-height:100%;
-        font-family: 'Inter-Regular';
     }
     .bottom-info{
         height:fit-content;
@@ -493,7 +580,6 @@
         color:#000;
         font-size:2.5vw;
         opacity:0.8;
-        font-family: 'Inter-Regular';
     }
     .bottom-info .body{
         list-style-type:none;
@@ -513,10 +599,9 @@
         font-size:2.2vw;
         text-transform:uppercase;
         color:#000;
-        font-family: 'Inter-Regular';
     }
     .natty-footer-video{
-        height:80vw;
+        height:70vw;
     }
     /* ==============natty-footer-section-end================= */
 }

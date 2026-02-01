@@ -3,6 +3,8 @@
     margin:0;
     box-sizing:border-box;
     letter-spacing:0;
+    text-decoration:none;
+    color:black;
 }
 @font-face {
     font-family: 'Inter-Regular';
@@ -54,6 +56,7 @@ body::-webkit-scrollbar-thumb{
     color:#fff;
     font-size:0.7vw;
     text-transform: uppercase;
+    font-family: 'Inter-Regular';
 }
 @keyframes animate-marquee{
     0%{
@@ -102,7 +105,7 @@ body::-webkit-scrollbar-thumb{
     width:100%;
     list-style:none;
     text-transform: uppercase;
-    font-size:0.64vw;
+    font-size:0.6vw;
     display:flex;
     flex-direction:column;
     justify-content: center;
@@ -116,6 +119,7 @@ body::-webkit-scrollbar-thumb{
     display:flex;
     flex-direction:column;
     justify-content: center;
+    font-family: 'Inter-Regular';
 }
 .cust-header-left .cust-header-left-free-shipping .free-shipping li:nth-child(2){
     opacity:0.4;
@@ -306,6 +310,52 @@ body::-webkit-scrollbar-thumb{
     font-family: 'Inter-Regular';
 }
 /* ================header-end===================== */
+/* ============menu-bar-functionality============== */
+.cust-menu-bar{
+    height:0;
+    width:20%;
+    background-color:white;
+    border-radius:0.5vw;
+    position:fixed;
+    top:4.6vw;
+    z-index:999;
+    overflow:hidden;
+}
+.cust-menu-bar.active{
+    height:fit-content;
+    transition:height 0.4s linear;
+}
+.cust-menu-bar .close{
+    background-color:transparent;
+    height:3vw;
+    width:3vw;
+    top:0;
+    right:0;
+    position:absolute;
+    padding:3%;
+    cursor:pointer;
+}
+.cust-menu-bar .close svg{
+    height:100%;
+    width:100%
+}
+.cust-menu-bar .cust-menu-bar-content{
+    height:fit-content;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    row-gap:10%;
+    list-style-type:none;
+    padding-inline-start:2vw;
+    padding-block:2vw;
+}
+.cust-menu-bar .cust-menu-bar-content li{
+    line-height:400%;
+    font-size:0.6vw;
+}
+/* ============menu-bar-functionality============== */
 /* ==========================shop-all-start========================= */
 .shop-all{
     height:29.5vw;

@@ -629,6 +629,31 @@ bottomsR.addEventListener("click", () => {
 });
 // ===========================================================================================responsive================================================================================
 document.addEventListener("DOMContentLoaded", () => {
+  // -------------------header-logic---------------------
+  let lastScroll = 0;
+  const header = document.querySelector(".cust-header-wrapper");
+  const marquee = window.document.querySelector(".cust-marquee-content-main");
+  window.addEventListener("scroll", () => {
+    // ✅ sirf 950px ya usse kam par hi kaam kare
+    if (window.innerWidth <= 950) {
+  
+      let currentScroll = window.scrollY;
+  
+      if (currentScroll > lastScroll) {
+        header.classList.add("hidden");
+        marquee.classList.add("hidden");
+      } else {
+        header.classList.remove("hidden");
+        marquee.classList.remove("hidden");
+      }
+  
+      lastScroll = currentScroll;
+  
+    } else {
+      // 🔹 desktop pe hidden class hata do
+      header.classList.remove("hidden");
+    }
+  });
   // ---------------------------------menu-bar-start----------------------------------------
   const r_cust_header_right_menu=window.document.querySelector(".r-cust-header-right-menu");
   const cust_menu_bar=window.document.querySelector(".cust-menu-bar");

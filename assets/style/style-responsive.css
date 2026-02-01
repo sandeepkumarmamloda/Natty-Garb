@@ -6,6 +6,11 @@
     .cust-marquee-content-main{
         height:5vw;
         z-index:5;
+        transition:top 0.4s ease;
+    }
+    .cust-marquee-content-main.hidden{
+        top:-20vw;
+        transition:top 0.4s ease;
     }
     .cust-marquee-content-inner{
         column-gap: 0.8%;
@@ -13,12 +18,19 @@
     .cust-marquee-content-inner>li{
         font-size:2.6vw;
         opacity:0.85;
+        font-family: 'Inter-Regular';
     }
     /* ================marquee-end==================== */
     /* ================header-start==================== */
     .cust-header-wrapper{
         top:5vw;
         height:9.8vw;
+        transition:top 0.4s ease;
+    }
+    .cust-header-wrapper.hidden{
+        top:-12vw;
+        overflow:hidden;
+        transition:top 0.4s ease;
     }
     .r-cust-header-left{
         display:block;
